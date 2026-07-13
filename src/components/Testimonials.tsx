@@ -16,7 +16,7 @@ export default function Testimonials() {
       name: "Carlos E.",
       role: "Empreendedor",
       image: "https://i.pravatar.cc/150?img=11",
-      content: "O Arthur Tolloti e o pessoal da GTB me ajudaram muito no empréstimo da firma. O Arthur Tolloti revirou tudo até achar os juros mais baratos para mim e resolveu tudo rapidinho. Sem enrolação, direto e valeu muito a pena financeiramente.",
+      content: "O Arthur Tolotti e o pessoal da GTB me ajudaram muito no empréstimo da firma. O Arthur Tolotti revirou tudo até achar os juros mais baratos para mim e resolveu tudo rapidinho. Sem enrolação, direto e valeu muito a pena financeiramente.",
       rating: 5,
     },
     {

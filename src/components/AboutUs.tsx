@@ -29,7 +29,7 @@ const partners = [
     description: 'Especialista em crédito e planejamento previdenciário, com 6 anos de experiência no mercado financeiro. Dedicado a simplificar o acesso a recursos e estruturar as melhores soluções para cada cliente.'
   },
   {
-    name: 'Arthur Tolloti',
+    name: 'Arthur Tolotti',
     role: 'Sócio Fundador',
     photo: '/arthur.jpeg',
     imagePosition: 'object-top',
