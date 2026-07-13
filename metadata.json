@@ -1,0 +1,8 @@
+{
+  "name": "Remix: GTB - Crédito e Finanças certo 2",
+  "description": "Landing page para a agência de crédito GTB focada em conversão para WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
