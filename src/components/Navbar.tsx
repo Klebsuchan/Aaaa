@@ -26,15 +26,15 @@ export default function Navbar() {
   return (
     <>
       {/* Spacer to prevent content from jumping when the fixed navbar is present */}
-      <div className="h-[104px] md:h-[136px] w-full invisible"></div>
+      <div className="h-[120px] md:h-[180px] w-full invisible"></div>
       <nav className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'bg-white/95 dark:bg-secondary-dark/95 backdrop-blur-md shadow-md border-b border-slate-200 dark:border-secondary-light/30' : 'bg-white/80 dark:bg-secondary-dark/80 backdrop-blur-none border-b border-transparent dark:border-transparent'}`}>
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16 md:h-20' : 'h-[104px] md:h-[136px]'}`}>
+          <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16 md:h-20' : 'h-[120px] md:h-[180px]'}`}>
             <div className="flex-shrink-0 flex items-center gap-3">
               <img 
-                 src="/logo gtb.png" 
+                 src={isDark ? "/logo_gtb_white.png" : "/logo gtb.png"} 
                  alt="GTB Logo" 
-                 className={`w-auto object-contain transition-all duration-300 ${isScrolled ? 'h-10 md:h-12' : 'h-16 md:h-24'}`}
+                 className={`w-auto object-contain transition-all duration-300 ${isScrolled ? 'h-10 md:h-12' : 'h-20 md:h-32'}`}
               />
             </div>
             

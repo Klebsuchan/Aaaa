@@ -14,7 +14,12 @@ export default function Footer() {
               <img 
                 src="/logo gtb.png" 
                 alt="GTB Logo" 
-                className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity dark:hidden"
+              />
+              <img 
+                src="/logo_gtb_white.png" 
+                alt="GTB Logo" 
+                className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity hidden dark:block"
               />
             </div>
             <p className="max-w-sm text-sm leading-relaxed mb-8 font-light">
