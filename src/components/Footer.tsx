@@ -31,12 +31,29 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-slate-200 dark:border-secondary-light/30 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.15em] gap-6 text-slate-500 dark:text-slate-500 text-center md:text-left">
-          <span>GTB SOLUÇÕES FINANCEIRAS LTDA © {new Date().getFullYear()}</span>
-          <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
-            <span>CNPJ: 35.211.729/0001-91</span>
-            <span onClick={() => setModalOpen('privacy')} className="text-primary hover:text-primary-light transition-colors underline cursor-pointer">Privacidade</span>
-            <span onClick={() => setModalOpen('cookies')} className="text-primary hover:text-primary-light transition-colors underline cursor-pointer">Cookies</span>
+        <div className="pt-8 border-t border-slate-200 dark:border-secondary-light/30 text-xs text-slate-500 dark:text-slate-400 text-center md:text-left font-light leading-relaxed space-y-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <span className="font-medium text-slate-700 dark:text-slate-300">GTB Soluções Financeiras · Todos os direitos reservados.</span>
+            <div className="flex gap-4">
+              <span onClick={() => setModalOpen('privacy')} className="hover:text-primary transition-colors cursor-pointer underline decoration-slate-300 dark:decoration-slate-700 underline-offset-4">Privacidade</span>
+              <span onClick={() => setModalOpen('cookies')} className="hover:text-primary transition-colors cursor-pointer underline decoration-slate-300 dark:decoration-slate-700 underline-offset-4">Cookies</span>
+            </div>
+          </div>
+          
+          <div className="max-w-5xl text-[11px] leading-relaxed opacity-80 space-y-4">
+            <p>
+              A GTB Soluções Financeiras atua como correspondente bancário, seguindo as diretrizes estabelecidas pelo Banco Central do Brasil, nos termos da Resolução CMN nº 4.935, de 29 de julho de 2021. Somos uma plataforma digital de pré-qualificação e comparação de crédito, não realizando operações de crédito diretamente.
+            </p>
+            <p>
+              Toda avaliação de crédito, aprovação e contratação é de responsabilidade exclusiva das Instituições Financeiras parceiras, de acordo com as suas respectivas políticas de crédito e de análise de risco. Ao utilizar nossos serviços, você concorda com nossos Termos de Uso e Política de Privacidade, elaborados em estrita conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
+            </p>
+            <p>
+              As taxas de juros, margem consignável, Custo Efetivo Total (CET) e prazos de pagamento variam conforme o convênio, o perfil do cliente e a instituição financeira escolhida no momento da simulação. Recomendamos que leia atentamente as condições de cada proposta antes da contratação do seu empréstimo.
+            </p>
+          </div>
+
+          <div className="text-[10px] uppercase tracking-widest font-semibold text-slate-400 dark:text-slate-500">
+            GTB SOLUÇÕES FINANCEIRAS LTDA · CNPJ 35.211.729/0001-91
           </div>
         </div>
       </div>
