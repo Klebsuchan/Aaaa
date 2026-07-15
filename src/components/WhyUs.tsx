@@ -31,7 +31,8 @@ export default function WhyUs() {
                   <div className="absolute inset-0 rounded-full border border-slate-200 dark:border-secondary-light"></div>
                   <div className="absolute inset-0 rounded-full border-2 border-t-primary border-r-primary border-b-transparent border-l-transparent group-hover:rotate-180 transition-transform duration-1000"></div>
                   <div className="absolute inset-2 rounded-full bg-white/60 dark:bg-secondary shadow-inner flex items-center justify-center font-bold text-slate-900 dark:text-white text-xl tracking-wider">
-                    <img src="/logo gtb.png" alt="GTB" className="w-12 h-12 object-contain" />
+                    <img src="/logo gtb.png" alt="GTB" className="w-12 h-12 object-contain dark:hidden" />
+                  <img src="/logo_gtb_white.png" alt="GTB" className="w-12 h-12 object-contain hidden dark:block" />
                   </div>
                 </div>
                 <h4 className="text-3xl font-bold text-slate-900 dark:text-white mb-3">Simulação Ágil</h4>
