@@ -31,7 +31,7 @@ const partners = [
   {
     name: 'Arthur Tolotti',
     role: 'Sócio Fundador',
-    photo: '/arthur_nobg_v2.jpeg',
+    photo: '/arthurnovo.jpeg',
     imagePosition: 'object-top',
     description: 'Especialista em soluções de crédito e mercado financeiro. Com ampla experiência em ajudar clientes a encontrar as melhores taxas e condições para seus projetos.'
   }
