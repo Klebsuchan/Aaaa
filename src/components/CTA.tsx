@@ -39,9 +39,6 @@ export default function CTA() {
             INICIAR ATENDIMENTO
             <MessageCircle size={24} className="text-primary" />
           </motion.a>
-          <p className="mt-4 text-[#0a1422]/70 font-bold text-sm text-center md:text-right">
-            Atendimento Seg. a Sex.<br/> das 9h às 18h
-          </p>
         </div>
       </motion.div>
     </section>

@@ -56,23 +56,11 @@ export default function FAQ() {
           <p className="text-slate-700 dark:text-slate-300 font-light mb-10 max-w-sm leading-relaxed">
             Aqui estão as principais dúvidas dos nossos clientes sobre a liberação de crédito, prazos e taxas.
           </p>
-          
-          <div className="bg-gradient-to-br from-white dark:from-secondary-dark to-white dark:to-secondary border border-slate-200 dark:border-secondary-light/50 p-6 rounded-2xl md:mt-auto shadow-inner">
-             <div className="flex items-center gap-3 mb-3">
-               <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                 <HelpCircle size={20} className="text-primary"/>
-               </div>
-               <span className="text-slate-900 dark:text-white font-bold tracking-wide">Ainda tem dúvidas?</span>
-             </div>
-             <p className="text-sm text-slate-600 dark:text-slate-400 font-light mb-5">Nossos especialistas respondem na hora.</p>
-             <a href="https://wa.me/5554997013983?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20empr%C3%A9stimos." target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-[#0a1422] px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-primary-light transition-colors shadow-md">
-               Falar com Suporte
-             </a>
-          </div>
         </div>
 
-        <div className="lg:w-2/3 relative z-10 space-y-4">
-          {faqs.map((faq, index) => (
+        <div className="lg:w-2/3 relative z-10 flex flex-col gap-6">
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
             <div 
               key={index} 
               className="bg-white/60 dark:bg-secondary-dark/60 border border-slate-200 dark:border-secondary-light/30 rounded-2xl overflow-hidden cursor-pointer hover:border-primary/30 transition-colors shadow-md"
@@ -96,6 +84,20 @@ export default function FAQ() {
               </motion.div>
             </div>
           ))}
+          </div>
+          
+          <div className="bg-gradient-to-br from-white dark:from-secondary-dark to-white dark:to-secondary border border-slate-200 dark:border-secondary-light/50 p-6 rounded-2xl shadow-inner mt-4">
+             <div className="flex items-center gap-3 mb-3">
+               <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                 <HelpCircle size={20} className="text-primary"/>
+               </div>
+               <span className="text-slate-900 dark:text-white font-bold tracking-wide">Ainda tem dúvidas?</span>
+             </div>
+             <p className="text-sm text-slate-600 dark:text-slate-400 font-light mb-5">Nossos especialistas respondem na hora.</p>
+             <a href="https://wa.me/5554997013983?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20empr%C3%A9stimos." target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-[#0a1422] px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-primary-light transition-colors shadow-md">
+               Falar com Suporte
+             </a>
+          </div>
         </div>
       </div>
     </motion.section>
