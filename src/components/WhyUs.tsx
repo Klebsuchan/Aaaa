@@ -31,7 +31,7 @@ export default function WhyUs() {
                   <div className="absolute inset-0 rounded-full border border-slate-200 dark:border-secondary-light"></div>
                   <div className="absolute inset-0 rounded-full border-2 border-t-primary border-r-primary border-b-transparent border-l-transparent group-hover:rotate-180 transition-transform duration-1000"></div>
                   <div className="absolute inset-2 rounded-full bg-white/60 dark:bg-secondary shadow-inner flex items-center justify-center font-bold text-slate-900 dark:text-white text-xl tracking-wider">
-                    <img src="/logogtb.png" alt="GTB" className="w-12 h-12 object-contain dark:hidden" />
+                  <img src="/logogtbatual.png" alt="GTB" className="w-12 h-12 object-contain dark:hidden" />
                   <img src="/logogtb_white.png" alt="GTB" className="w-12 h-12 object-contain hidden dark:block" />
                   </div>
                 </div>

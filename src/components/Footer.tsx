@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
               <img 
-                src="/logogtb.png" 
+                src="/logogtbatual.png" 
                 alt="GTB Logo" 
                 className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity dark:hidden"
               />

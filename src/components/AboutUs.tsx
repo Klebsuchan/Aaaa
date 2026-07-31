@@ -24,15 +24,15 @@ const partners = [
   {
     name: 'Bernardo Bonfante',
     role: 'Sócio Fundador',
-    photo: '/bernardo.jpeg',
-    imagePosition: 'object-[center_top] scale-[1.5] -translate-y-6',
+    photo: '/bernardo.png',
+    imagePosition: 'object-center scale-110',
     description: 'Especialista em crédito e planejamento previdenciário, com 6 anos de experiência no mercado financeiro. Dedicado a simplificar o acesso a recursos e estruturar as melhores soluções para cada cliente.'
   },
   {
     name: 'Arthur Tolotti',
     role: 'Sócio Fundador',
-    photo: '/arthurnovo.jpeg',
-    imagePosition: 'object-[center_top] scale-[1.1]',
+    photo: '/arthur.png',
+    imagePosition: 'object-center scale-110',
     description: 'Especialista em soluções de crédito e mercado financeiro. Com ampla experiência em ajudar clientes a encontrar as melhores taxas e condições para seus projetos.'
   }
 ];
