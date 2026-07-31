@@ -11,13 +11,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 mb-16">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
-              <img 
+              <img loading="lazy" 
                 src="/logogtbatual.png" 
                 alt="GTB Logo" 
                 className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity dark:hidden"
               />
-              <img 
-                src="/logogtb_white.png" 
+              <img loading="lazy" 
+                src="/logogtb-white.png" 
                 alt="GTB Logo" 
                 className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity hidden dark:block"
               />

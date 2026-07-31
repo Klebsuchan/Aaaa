@@ -100,7 +100,7 @@ export default function AboutUs() {
                 className="flex flex-col items-center max-w-sm text-center"
               >
                 <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white dark:border-secondary shadow-xl mb-4">
-                  <img 
+                  <img loading="lazy" 
                     src={partner.photo} 
                     alt={`Foto de ${partner.name}`} 
                     className={`w-full h-full object-cover ${partner.imagePosition || 'object-center'}`}

@@ -171,7 +171,7 @@ export default function Partners() {
                   >
                     <div className="w-24 h-14 md:w-28 md:h-16 rounded-xl border border-slate-200 dark:border-secondary-light/50 bg-white/60 dark:bg-secondary/50 flex items-center justify-center text-primary-light transition-all duration-300 overflow-hidden shadow-sm">
                       {bank.logo ? (
-                        <img 
+                        <img loading="lazy" 
                           src={bank.logo} 
                           alt={bank.name} 
                           className={`w-full h-full object-contain p-2 ${
@@ -203,7 +203,7 @@ export default function Partners() {
                   >
                     <div className="w-24 h-14 md:w-28 md:h-16 rounded-xl border border-slate-200 dark:border-secondary-light/50 bg-white/60 dark:bg-secondary/50 flex items-center justify-center text-primary-light transition-all duration-300 overflow-hidden shadow-sm">
                       {bank.logo ? (
-                        <img 
+                        <img loading="lazy" 
                           src={bank.logo} 
                           alt={bank.name} 
                           className={`w-full h-full object-contain p-2 ${

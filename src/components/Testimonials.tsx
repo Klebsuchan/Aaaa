@@ -67,7 +67,7 @@ export default function Testimonials() {
               </div>
               
               <div className="flex items-center gap-4 mt-auto border-t border-slate-100 dark:border-secondary-light/30 pt-6">
-                <img src={t.image} alt={t.name} className="w-14 h-14 rounded-full object-cover border-2 border-primary/20" />
+                <img loading="lazy" src={t.image} alt={t.name} className="w-14 h-14 rounded-full object-cover border-2 border-primary/20" />
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white">{t.name}</h4>
                   <p className="text-sm text-slate-500 dark:text-slate-400">{t.role}</p>
