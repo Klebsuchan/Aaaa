@@ -3,11 +3,6 @@ import { motion } from 'motion/react';
 
 const services = [
   {
-    icon: Wallet,
-    title: 'Crédito Pessoal',
-    description: 'Dinheiro rápido no boleto ou carnê, com ou sem garantia. Ideal para resolver imprevistos.'
-  },
-  {
     icon: Landmark,
     title: 'Consignado INSS',
     description: 'Menores taxas do mercado. Exclusivo para aposentados e pensionistas do INSS com desconto em folha.'

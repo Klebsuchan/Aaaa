@@ -145,7 +145,7 @@ Parcelas: ${formData.installments}x`;
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-              As melhores taxas do mercado para crédito pessoal, consignado e financiamento com aprovação rápida.
+              As melhores taxas do mercado para crédito consignado e financiamento com aprovação rápida.
             </p>
             
             <div className="pt-4 sm:pt-6 pb-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

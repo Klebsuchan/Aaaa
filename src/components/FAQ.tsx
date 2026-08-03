@@ -8,20 +8,12 @@ const faqs = [
     answer: 'Não! Nunca cobramos valores antecipados. Se alguém pedir depósito antecipado em nome da GTB ou de nossos parceiros, é golpe. A liberação do crédito é feita diretamente na sua conta após a aprovação.'
   },
   {
-    question: 'Como funciona a Antecipação do Saque-Aniversário do FGTS?',
-    answer: 'Você pode antecipar até 10 parcelas do seu saque-aniversário de forma digital. O desconto é feito anualmente direto no saldo do seu FGTS, não comprometendo sua renda mensal. O dinheiro cai na conta em minutos.'
-  },
-  {
     question: 'Estou negativado. Posso fazer um empréstimo?',
-    answer: 'Sim! Modalidades como Empréstimo Consignado, Antecipação do FGTS e Empréstimo na Conta de Luz não consultam SPC/Serasa.'
+    answer: 'Sim! A modalidade de Empréstimo Consignado não consulta SPC/Serasa.'
   },
   {
     question: 'Quanto tempo demora para o dinheiro cair na conta?',
-    answer: 'Depende da modalidade. A Antecipação do FGTS pode cair em até 30 minutos. O Consignado e Crédito na Conta de Luz costumam ser liberados em até 24h úteis após a aprovação final.'
-  },
-  {
-    question: 'O que é o Crédito na Conta de Luz?',
-    answer: 'É uma modalidade onde o pagamento das parcelas vem descontado mensalmente na sua fatura de energia elétrica. Muito prático para quem não possui conta bancária tradicional ou margem em outras linhas.'
+    answer: 'O Consignado costuma ser liberado em até 24h úteis após a aprovação final.'
   }
 ];
 
