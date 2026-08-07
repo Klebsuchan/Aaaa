@@ -1,5 +1,8 @@
 import { Star, Quote } from 'lucide-react';
 import { motion } from 'motion/react';
+import marianaImg from '../assets/images/mariana.jpeg';
+import carlosImg from '../assets/images/carlos.jpeg';
+import ricardoImg from '../assets/images/ricardo.jpeg';
 
 export default function Testimonials() {
     const testimonials = [
@@ -7,7 +10,7 @@ export default function Testimonials() {
       id: 1,
       name: "Mariana C.",
       role: "Neta de Aposentado",
-      image: "/mariana.jpeg",
+      image: marianaImg,
       content: "Contratei o consignado INSS para o meu avô e o atendimento do Bernardo foi excepcional. Ele nos auxiliou em cada etapa, desde o desbloqueio do benefício até o dinheiro cair na conta, explicando tudo de forma muito clara. A GTB mostrou uma agilidade impressionante no processo. Serviço técnico, rápido e de total confiança. Recomendo muito!",
       rating: 5,
     },
@@ -15,7 +18,7 @@ export default function Testimonials() {
       id: 2,
       name: "Carlos E.",
       role: "Empreendedor",
-      image: "/carlos.jpeg",
+      image: carlosImg,
       content: "O Arthur Tolotti e o pessoal da GTB me ajudaram muito no empréstimo da firma. O Arthur Tolotti revirou tudo até achar os juros mais baratos para mim e resolveu tudo rapidinho. Sem enrolação, direto e valeu muito a pena financeiramente.",
       rating: 5,
     },
@@ -23,7 +26,7 @@ export default function Testimonials() {
       id: 3,
       name: "Ricardo M.",
       role: "Cliente Refinanciamento",
-      image: "/ricardo.jpeg",
+      image: ricardoImg,
       content: "Se você tá zerado de grana e tem carro quitado, corre na GTB. Eu estava desesperado e eles me mostraram que dava para conseguir juro baixo usando o carro. O processo foi tão bom que saí com mais dinheiro no bolso do que eu fui buscar.",
       rating: 5,
     }

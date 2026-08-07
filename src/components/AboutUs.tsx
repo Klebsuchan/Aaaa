@@ -1,5 +1,7 @@
 import { Building, Users, Target } from 'lucide-react';
 import { motion } from 'motion/react';
+import bernardoImg from '../assets/images/bernardo.jpeg';
+import arthurImg from '../assets/images/arthur.jpeg';
 
 const values = [
   {
@@ -24,14 +26,14 @@ const partners = [
   {
     name: 'Bernardo Bonfante',
     role: 'Sócio Fundador',
-    photo: '/bernardo.png',
+    photo: bernardoImg,
     imagePosition: 'object-center scale-110',
     description: 'Especialista em crédito e planejamento previdenciário, com 6 anos de experiência no mercado financeiro. Dedicado a simplificar o acesso a recursos e estruturar as melhores soluções para cada cliente.'
   },
   {
     name: 'Arthur Tolotti',
     role: 'Sócio Fundador',
-    photo: '/arthur.png',
+    photo: arthurImg,
     imagePosition: 'object-center scale-110',
     description: 'Especialista em soluções de crédito e mercado financeiro. Com ampla experiência em ajudar clientes a encontrar as melhores taxas e condições para seus projetos.'
   }

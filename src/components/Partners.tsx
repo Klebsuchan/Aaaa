@@ -1,50 +1,91 @@
 import { Building2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useRef, useEffect, useState } from 'react';
 import { motion } from 'motion/react';
+import bbImg from '../assets/bancos/bb.svg';
+import banrisulImg from '../assets/bancos/banrisul.svg';
+import santanderImg from '../assets/bancos/santander.svg';
+import itauImg from '../assets/bancos/itau.svg';
+import c6Img from '../assets/bancos/c6.svg';
+import picpayImg from '../assets/bancos/picpay.svg';
+import safraImg from '../assets/bancos/safra.svg';
+import bradescoImg from '../assets/bancos/bradesco.svg';
+import caixaImg from '../assets/bancos/caixa.svg';
+import bmgImg from '../assets/bancos/bmg.svg';
+import panImg from '../assets/bancos/pan.png';
+import daycovalImg from '../assets/bancos/daycoval.jpg';
+import factaImg from '../assets/bancos/facta.jpg';
+import inbursaImg from '../assets/bancos/inbursa.png';
+import agibankImg from '../assets/bancos/agibank.png';
+import cetelemImg from '../assets/bancos/cetelem.png';
+import masterImg from '../assets/bancos/master.jpg';
+import mercantilImg from '../assets/bancos/mercantil.svg';
+import bvImg from '../assets/bancos/bv.svg';
+import sicoobImg from '../assets/bancos/sicoob.svg';
+import sicrediImg from '../assets/bancos/sicredi.svg';
+import omniImg from '../assets/bancos/omni.svg';
+import portoImg from '../assets/bancos/porto.png';
+import interImg from '../assets/bancos/inter.svg';
+import nubankImg from '../assets/bancos/nubank.svg';
+import neonImg from '../assets/bancos/neon.jpg';
+import originalImg from '../assets/bancos/original.svg';
+import pineImg from '../assets/bancos/pine.svg';
+import alfaImg from '../assets/bancos/alfa.jpg';
+import btgImg from '../assets/bancos/btg.png';
+import creditasImg from '../assets/bancos/creditas.jpg';
+import semearImg from '../assets/bancos/semear.jpg';
+import paranaImg from '../assets/bancos/parana.png';
+import brbImg from '../assets/bancos/brb.svg';
+import paulistaImg from '../assets/bancos/paulista.svg';
+import votorantimImg from '../assets/bancos/votorantim.png';
+import fin_alfaImg from '../assets/bancos/fin_alfa.png';
+import nordesteImg from '../assets/bancos/nordeste.svg';
+import amazoniaImg from '../assets/bancos/amazonia.svg';
+import crefisaImg from '../assets/bancos/crefisa.jpg';
+import via_certaImg from '../assets/bancos/via_certa.png';
 
 const banks = [
-  { name: 'BB', logo: '/bancos-svg/banco-do-brasil-sem-fundo.svg?v=2' },
-  { name: 'Banrisul', logo: '/bancos-svg/banrisul-logo-nome-2023.svg?v=2' },
-  { name: 'Santander', logo: '/santander-1.jpg' },
-  { name: 'Itaú', logo: '/bancos-svg/itau.svg?v=2' },
-  { name: 'C6 Bank', logo: '/c6-1.jpg' },
-  { name: 'PicPay', logo: '/bancos-svg/picpay.svg?v=2' },
-  { name: 'Safra', logo: '/bancos-svg/logo-safra-nome.svg?v=2' },
-  { name: 'Bradesco', logo: '/bancos-svg/bradesco.svg?v=2' },
-  { name: 'Caixa', logo: '/bancos-svg/caixa-economica-federal-1.svg?v=2' },
-  { name: 'BMG', logo: '/bancos-svg/bmg.svg?v=2' },
-  { name: 'PAN', logo: '/bancos-svg/bancoPan-nome.svg?v=2' },
-  { name: 'Daycoval', logo: '/bancos-svg/logo-Daycoval.svg?v=2' },
-  { name: 'Facta', logo: '/facta-1.jpg' },
-  { name: 'Inbursa', logo: '/inubrasa-1.png' },
-  { name: 'Agibank', logo: '/agibank-1.png' },
-  { name: 'Cetelem', logo: '/cetelem-2.png' },
-  { name: 'Master', logo: '/master-1.jpg' },
-  { name: 'Mercantil', logo: '/banco mercantil-1.png' },
-  { name: 'BV', logo: '/bv-1.png' },
-  { name: 'Sicoob', logo: '/sicoob-1.png' },
-  { name: 'Sicredi', logo: '/sicredi-1.webp' },
-  { name: 'Omni', logo: '/omni-2.png' },
-  { name: 'Porto', logo: '/porto seguro-2.jpg' },
-  { name: 'Inter', logo: '/inter-1.webp' },
-  { name: 'Nubank', logo: '/nubank-1.png' },
-  { name: 'Neon', logo: '/neon-1.png' },
-  { name: 'Original', logo: '/original-1.webp' },
-  { name: 'Pine', logo: '/pine-1.jpg' },
-  { name: 'Alfa', logo: '/alfa-1.jpg' },
-  { name: 'BTG', logo: '/btg-2.png' },
-  { name: 'Creditas', logo: '/creditas-1.jpg' },
-  { name: 'Semear', logo: '/semear-1.jpg' },
-  { name: 'Paraná', logo: '/parana-1.png' },
-  { name: 'BRB', logo: '/brb-1.png' },
-  { name: 'Paulista', logo: '/paulista-2.png' },
-  { name: 'Votorantim', logo: '/votarantim-2.png' },
-  { name: 'Fin. Alfa', logo: '/alfa financeira.png' },
-  { name: 'Nordeste', logo: '/nordeste-3.webp' },
-  { name: 'Amazônia', logo: '/bancos-svg/banco-da-amazonia.svg?v=2' },
-  { name: 'Fin. BRB', logo: '/brb-1.png' },
-  { name: 'CREFISA', logo: '/crefisa-3.jpg' },
-  { name: 'Via Certa', logo: '/via certa.jpg' }
+  { name: 'BB', logo: bbImg },
+  { name: 'Banrisul', logo: banrisulImg },
+  { name: 'Santander', logo: santanderImg },
+  { name: 'Itaú', logo: itauImg },
+  { name: 'C6 Bank', logo: c6Img },
+  { name: 'PicPay', logo: picpayImg },
+  { name: 'Safra', logo: safraImg },
+  { name: 'Bradesco', logo: bradescoImg },
+  { name: 'Caixa', logo: caixaImg },
+  { name: 'BMG', logo: bmgImg },
+  { name: 'PAN', logo: panImg },
+  { name: 'Daycoval', logo: daycovalImg },
+  { name: 'Facta', logo: factaImg },
+  { name: 'Inbursa', logo: inbursaImg },
+  { name: 'Agibank', logo: agibankImg },
+  { name: 'Cetelem', logo: cetelemImg },
+  { name: 'Master', logo: masterImg },
+  { name: 'Mercantil', logo: mercantilImg },
+  { name: 'BV', logo: bvImg },
+  { name: 'Sicoob', logo: sicoobImg },
+  { name: 'Sicredi', logo: sicrediImg },
+  { name: 'Omni', logo: omniImg },
+  { name: 'Porto', logo: portoImg },
+  { name: 'Inter', logo: interImg },
+  { name: 'Nubank', logo: nubankImg },
+  { name: 'Neon', logo: neonImg },
+  { name: 'Original', logo: originalImg },
+  { name: 'Pine', logo: pineImg },
+  { name: 'Alfa', logo: alfaImg },
+  { name: 'BTG', logo: btgImg },
+  { name: 'Creditas', logo: creditasImg },
+  { name: 'Semear', logo: semearImg },
+  { name: 'Paraná', logo: paranaImg },
+  { name: 'BRB', logo: brbImg },
+  { name: 'Paulista', logo: paulistaImg },
+  { name: 'Votorantim', logo: votorantimImg },
+  { name: 'Fin. Alfa', logo: fin_alfaImg },
+  { name: 'Nordeste', logo: nordesteImg },
+  { name: 'Amazônia', logo: amazoniaImg },
+  { name: 'Fin. BRB', logo: brbImg },
+  { name: 'CREFISA', logo: crefisaImg },
+  { name: 'Via Certa', logo: via_certaImg }
 ];
 
 export default function Partners() {
@@ -160,27 +201,17 @@ export default function Partners() {
           >
             {/* Renderizar os bancos duas vezes em containers separados para cálculo perfeito do loop infinito */}
             <div id="scroll-content-1" className="flex gap-6 pr-6">
-              {banks.map((bank, index) => {
-                const isWhiteLogo = bank.logo.toLowerCase().includes('branco') || bank.logo.includes('bancoPan') || bank.logo.includes('white') || bank.logo.includes('logo_mercantil-nome-branco') || bank.logo.includes('stone-branco') || bank.logo.includes('banco-do-brasil') || bank.logo.includes('safra') || bank.logo.toLowerCase().includes('daycoval');
-                const isBlackLogo = bank.logo.toLowerCase().includes('preto') || bank.logo.includes('c6') || bank.logo.includes('logo-sicred-preto');
-
-                return (
+              {banks.map((bank, index) => (
                   <div 
                     key={index} 
                     className="flex-shrink-0 w-52 bg-white/60 dark:bg-secondary-dark/80 border border-slate-200 dark:border-secondary-light/50 rounded-2xl px-4 py-5 flex flex-col items-center justify-center gap-3 transition-all hover:-translate-y-1 hover:border-primary/50 hover:bg-slate-50 dark:hover:bg-secondary-dark shadow-md hover:shadow-lg"
                   >
-                    <div className="w-24 h-14 md:w-28 md:h-16 rounded-xl border border-slate-200 dark:border-secondary-light/50 bg-white/60 dark:bg-secondary/50 flex items-center justify-center text-primary-light transition-all duration-300 overflow-hidden shadow-sm">
+                    <div className="w-24 h-14 md:w-28 md:h-16 rounded-xl border border-slate-200 dark:border-secondary-light/50 bg-white/60 dark:bg-white flex items-center justify-center text-primary-light transition-all duration-300 overflow-hidden shadow-sm">
                       {bank.logo ? (
                         <img loading="lazy" 
                           src={bank.logo} 
                           alt={bank.name} 
-                          className={`w-full h-full object-contain p-2 ${
-                            isBlackLogo 
-                              ? 'dark:invert' 
-                              : isWhiteLogo
-                                ? 'brightness-0 dark:invert'
-                                : ''
-                          }`} 
+                          className="w-full h-full object-contain p-2 mix-blend-multiply dark:mix-blend-normal" 
                         />
                       ) : (
                         <Building2 size={32} />
@@ -188,31 +219,20 @@ export default function Partners() {
                     </div>
                     <span className="font-bold text-slate-800 dark:text-slate-200 text-lg transition-colors text-center w-full truncate px-2">{bank.name}</span>
                   </div>
-                );
-              })}
+              ))}
             </div>
             <div id="scroll-content-2" className="flex gap-6 pr-6">
-              {banks.map((bank, index) => {
-                const isWhiteLogo = bank.logo.toLowerCase().includes('branco') || bank.logo.includes('bancoPan') || bank.logo.includes('white') || bank.logo.includes('logo_mercantil-nome-branco') || bank.logo.includes('stone-branco') || bank.logo.includes('banco-do-brasil') || bank.logo.includes('safra') || bank.logo.toLowerCase().includes('daycoval');
-                const isBlackLogo = bank.logo.toLowerCase().includes('preto') || bank.logo.includes('c6') || bank.logo.includes('logo-sicred-preto');
-
-                return (
+              {banks.map((bank, index) => (
                   <div 
                     key={`clone-${index}`} 
                     className="flex-shrink-0 w-52 bg-white/60 dark:bg-secondary-dark/80 border border-slate-200 dark:border-secondary-light/50 rounded-2xl px-4 py-5 flex flex-col items-center justify-center gap-3 transition-all hover:-translate-y-1 hover:border-primary/50 hover:bg-slate-50 dark:hover:bg-secondary-dark shadow-md hover:shadow-lg"
                   >
-                    <div className="w-24 h-14 md:w-28 md:h-16 rounded-xl border border-slate-200 dark:border-secondary-light/50 bg-white/60 dark:bg-secondary/50 flex items-center justify-center text-primary-light transition-all duration-300 overflow-hidden shadow-sm">
+                    <div className="w-24 h-14 md:w-28 md:h-16 rounded-xl border border-slate-200 dark:border-secondary-light/50 bg-white/60 dark:bg-white flex items-center justify-center text-primary-light transition-all duration-300 overflow-hidden shadow-sm">
                       {bank.logo ? (
                         <img loading="lazy" 
                           src={bank.logo} 
                           alt={bank.name} 
-                          className={`w-full h-full object-contain p-2 ${
-                            isBlackLogo 
-                              ? 'dark:invert' 
-                              : isWhiteLogo
-                                ? 'brightness-0 dark:invert'
-                                : ''
-                          }`} 
+                          className="w-full h-full object-contain p-2 mix-blend-multiply dark:mix-blend-normal" 
                         />
                       ) : (
                         <Building2 size={32} />
@@ -220,8 +240,7 @@ export default function Partners() {
                     </div>
                     <span className="font-bold text-slate-800 dark:text-slate-200 text-lg transition-colors text-center w-full truncate px-2">{bank.name}</span>
                   </div>
-                );
-              })}
+              ))}
             </div>
           </div>
         </div>
