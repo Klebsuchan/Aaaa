@@ -50,7 +50,7 @@ Parcelas: ${formData.installments}x`;
           playsInline 
           className="w-full h-full object-cover"
         >
-          <source src="/crie_um_video_que_pode_ser_usa.mp4" type="video/mp4" />
+          <source src="/videohero.mp4" type="video/mp4" />
         </motion.video>
         <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-white/80 to-white/40 dark:from-secondary-dark/95 dark:via-secondary-dark/80 dark:to-secondary-dark/40"></div>
       </div>
@@ -72,7 +72,7 @@ Parcelas: ${formData.installments}x`;
               playsInline
               className="absolute inset-0 w-full h-full object-cover opacity-100 dark:opacity-80"
             >
-              <source src="/bg-video.mp4" type="video/mp4" />
+              <source src="/videohero.mp4" type="video/mp4" />
             </video>
             {/* Gradient overlay for readability */}
             <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/40 dark:from-secondary-dark/95 dark:via-secondary-dark/80 dark:to-secondary-dark/40 backdrop-blur-[2px]"></div>
