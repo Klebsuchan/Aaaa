@@ -5,7 +5,8 @@ import carlosImg from '../assets/images/carlos.jpeg';
 import ricardoImg from '../assets/images/ricardo.jpeg';
 
 export default function Testimonials() {
-    const testimonials = [
+  
+  const testimonials = [
     {
       id: 1,
       name: "Mariana C.",

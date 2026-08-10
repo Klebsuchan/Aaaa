@@ -31,11 +31,7 @@ export default function Navbar() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`flex justify-between items-center transition-all duration-300 ${isScrolled ? 'h-16 md:h-20' : 'h-[120px] md:h-[180px]'}`}>
             <div className="flex-shrink-0 flex items-center gap-3">
-              <img 
-                 src={isDark ? "/logogtb-white.png" : "/logogtbatual.png"} 
-                 alt="GTB Logo" 
-                 className={`w-auto object-contain transition-all duration-300 ${isScrolled ? 'h-10 md:h-12' : 'h-20 md:h-32'}`}
-              />
+              <img src={isDark ? "/logogtb-white.png" : "/logogtbatual.png"} alt="GTB Logo" className={`w-auto object-contain transition-all duration-300 ${isScrolled ? 'h-10 md:h-12' : 'h-20 md:h-32'}`} />
             </div>
             
             <div className={`hidden md:flex items-center space-x-10 transition-all duration-300`}>

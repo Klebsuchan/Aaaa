@@ -42,6 +42,47 @@ import nordesteImg from '../assets/bancos/nordeste.svg';
 import amazoniaImg from '../assets/bancos/amazonia.svg';
 import crefisaImg from '../assets/bancos/crefisa.jpg';
 import via_certaImg from '../assets/bancos/via_certa.png';
+import bbImg from '../assets/bancos/bb.svg';
+import banrisulImg from '../assets/bancos/banrisul.svg';
+import santanderImg from '../assets/bancos/santander.svg';
+import itauImg from '../assets/bancos/itau.svg';
+import c6Img from '../assets/bancos/c6.svg';
+import picpayImg from '../assets/bancos/picpay.svg';
+import safraImg from '../assets/bancos/safra.svg';
+import bradescoImg from '../assets/bancos/bradesco.svg';
+import caixaImg from '../assets/bancos/caixa.svg';
+import bmgImg from '../assets/bancos/bmg.svg';
+
+
+
+
+
+
+
+import mercantilImg from '../assets/bancos/mercantil.svg';
+import bvImg from '../assets/bancos/bv.svg';
+import sicoobImg from '../assets/bancos/sicoob.svg';
+import sicrediImg from '../assets/bancos/sicredi.svg';
+import omniImg from '../assets/bancos/omni.svg';
+
+import interImg from '../assets/bancos/inter.svg';
+import nubankImg from '../assets/bancos/nubank.svg';
+
+import originalImg from '../assets/bancos/original.svg';
+import pineImg from '../assets/bancos/pine.svg';
+
+
+
+
+
+import brbImg from '../assets/bancos/brb.svg';
+import paulistaImg from '../assets/bancos/paulista.svg';
+
+
+import nordesteImg from '../assets/bancos/nordeste.svg';
+import amazoniaImg from '../assets/bancos/amazonia.svg';
+
+
 
 const banks = [
   { name: 'BB', logo: bbImg },
@@ -83,7 +124,6 @@ const banks = [
   { name: 'Fin. Alfa', logo: fin_alfaImg },
   { name: 'Nordeste', logo: nordesteImg },
   { name: 'Amazônia', logo: amazoniaImg },
-  { name: 'Fin. BRB', logo: brbImg },
   { name: 'CREFISA', logo: crefisaImg },
   { name: 'Via Certa', logo: via_certaImg }
 ];

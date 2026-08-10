@@ -11,16 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 mb-16">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
-              <img loading="lazy" 
-                src="/logogtbatual.png" 
-                alt="GTB Logo" 
-                className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity dark:hidden"
-              />
-              <img loading="lazy" 
-                src="/logogtb-white.png" 
-                alt="GTB Logo" 
-                className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity hidden dark:block"
-              />
+              <img loading="lazy" src="/logogtbatual.png" alt="GTB Logo" className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity dark:hidden" /><img loading="lazy" src="/logogtb-white.png" alt="GTB Logo" className="h-14 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity hidden dark:block" />
             </div>
             <p className="max-w-sm text-sm leading-relaxed mb-8 font-light">
               A GTB é uma correspondente bancária focada em oferecer as melhores soluções financeiras e opções de crédito seguras.
